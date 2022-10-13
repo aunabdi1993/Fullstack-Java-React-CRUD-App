@@ -2,14 +2,12 @@ package com.javareactcrud.fullstackbackend.controller;
 
 import com.javareactcrud.fullstackbackend.model.User;
 import com.javareactcrud.fullstackbackend.repository.UserRepository;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
+@CrossOrigin("http://localhost:3000")
 public class UserController {
 
     private final UserRepository userRepository;

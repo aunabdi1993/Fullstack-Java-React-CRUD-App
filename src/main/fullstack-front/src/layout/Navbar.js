@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -9,7 +10,7 @@ const Navbar = () => {
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                 </button>
-                <button className="btn btn-outline-light">Add User</button>
+                <Link className="btn btn-outline-light" to="/addUser">Add User</Link>
             </div>
         </nav>
     )
